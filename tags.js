@@ -2,14 +2,14 @@
 {
   const tags = {
     template: `
-    <name-tag ng-repeat="name in $ctrl.name" name="name" add-name="$ctrl.addName(name);"></name-tag>
+    <name-tag ng-repeat="names in $ctrl.name" names="names"></name-tag>
     `,
     controller: function(){
       const vm = this;
       vm.name = [
-        {name: "grant"},
-        {name: "tommy"},
-        {name: "pearl"}
+        {name: "grant", color: "red"},
+        {name: "tommy", color: "blue"},
+        {name: "pearl", color: "green"}
       ];
       vm.addName = function(name){
       }

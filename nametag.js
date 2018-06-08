@@ -3,11 +3,11 @@
 let nameTag = {
 
   bindings: {
-    name: '<',
+    names: '<',
     color: '<'
   },
   template: `<div>
-  <p>name:{{$ctrl.name.name}}</p>
+  <p style = "border: 2px solid {{$ctrl.names.color}}">name:{{$ctrl.names.name}}</p>
   </div>`,
 
   controller: function () {
